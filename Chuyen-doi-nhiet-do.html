@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>Fahrenheit</p>
+    <input id="input" type="number"
+           oninput="nhietdo(this.value)"
+           onchange="nhietdo(this.value)">
+    <p>Celsius: <span id="outputCelsius"></span> </p>
+</form>
+
+<script>
+      function nhietdo(valNum){
+         valNum = parseFloat(valNum)
+          document.getElementById("outputCelsius").innerHTML = (valNum-32)/1.8
+      }
+</script>
+</body>
+</html>
