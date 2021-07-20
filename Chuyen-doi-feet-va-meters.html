@@ -5,37 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="nhap">
-<select id="luachon">
-    <option value="feet"> feet</option>
-    <option value="meter"> meter</option>
-</select>
-<button type="button" id="kiemtra" onclick="chuyendoi()">kiểm tra</button>
-<p id="Ketqua"></p>
 <script>
-    function chuyendoi() {
-        let luachon = document.getElementById("luachon")
-        let giatri = document.getElementById("nhap")
-        let ketqua = 0
-        if(luachon.value === "feet" ){
-            ketqua = footToMeter(giatri.value)
-            document.getElementById("Ketqua").innerHTML = "kết quả = "+ ketqua + "meter"
-        }  else {
-            ketqua = meterToFoot(giatri.value)
-            document.getElementById("Ketqua").innerHTML = "kết quả =" +ketqua+ "feet"
-        }
-    }
-
-    function footToMeter(feet) {
-        let meter = 0.305 * feet
-    return meter
+    function footToMeter(foot) {
+        return 0.305 * foot
     }
 
     function meterToFoot(meter) {
-        let feet = 3.279 * meter
-     return feet
+        return 3.279 * meter
     }
 
+    let nhap = parseInt(prompt("đổi feet sang meter"))
+    let result = footToMeter(nhap)
+    alert("" + result)
+    let nhap1 =parseInt(prompt("đổi meter sang feet"))
+    let result1 = meterToFoot(nhap1)
+    alert("" + result1)
 
 </script>
 </body>
