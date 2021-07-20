@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body> <!--
+onload="alertmessage() ; nhap()">
+<p id="bt3"></p>
+
+<input type="button" value="bai5" onclick="bai5()">
+-->
+</body>
+</html>
+<script>
+    /*   Bài 1
+
+      function alertmessage(){
+         alert("Xin chào")
+      }
+*/
+    /* Bài 2
+
+    function hientangso(a) {
+        a++
+        return a
+    }
+    function nhap(){
+        let so = hientangso(prompt("nhap"))
+        alert("nhập số và tăng thêm 1 = " + so)
+    }
+*/
+
+
+    /* Bài 3
+
+    let a = parseInt(prompt("nhập giá trị a ="))
+    let b = parseInt(prompt("nhập giá trị b ="))
+    if(a>b){
+        alert("a lớn hơn b")
+    } else {
+     document.getElementById("bt3").innerHTML = "tổng a + b ="+ (a+b)
+    }
+     */
+
+    /*  Bài 4
+
+ function addNumbers() {
+     firstNum = 4;
+     secondNum = 8;
+     result = firstNum + secondNum;
+     return result;
+ }
+ result = 0;
+ result = addNumbers();
+ alert(result)
+
+*/
+    // bài 5 CHƯA LÀM Ạ!!!
+
+
+    // *********************************************************************
+
+
+    // Luyện tập và sử dụng hàm 2
+
+    /* Bài 1
+     function tinhbinhphuong(){
+         let a = parseInt(prompt("nhập một số để tính bình phương"))
+       return a*a
+     }
+     let result = tinhbinhphuong()
+      alert(result)
+*/
+
+    /* Bài 2
+
+     let r = parseInt(prompt("nhập bán kính để tính chu vi & diện tích hình tròn"))
+    function tinhdientich(r){
+         return r * r * 3.14
+    }
+    function tinhchuvi(r) {
+         return r*2*3.14
+    }
+    alert('chu vi của hình tròn = ' + tinhchuvi(r))
+    alert('diện tích của hình tròn = '+ tinhdientich(r))
+    */
+
+
+
+    /* Bài 3
+    let n = parseInt(prompt("nhập"))
+    function ham_tinh_giai_thua(n)
+    {
+        if(n ==0)
+        {
+            return 1;
+        }
+        else
+        {
+            return n * ham_tinh_giai_thua(n-1);
+        }
+    }
+    let result = ham_tinh_giai_thua(n)
+    alert(result)
+     */
+
+    /*  Bài 4
+
+    let nhapp = parseInt(prompt("nhập kí tự"))
+    function checkso (nhap){
+          if (isNaN(nhap)){
+              return false
+          }else {
+              return true
+          }
+    } console.log(checkso(nhapp))
+*/
+
+
+    /*    Bài 5
+
+    function nhanham() {
+        let input = []
+        for (i = 0; i < 3; i++) {
+            input.push(parseInt(prompt("nhập 3 số bất kì " + i)))
+        }
+        for (let j = 0; j < input.length; j++) {
+            result = input[0]
+            if (input[j] < result) {
+                result = input[j]
+            }
+        }
+        return result
+    }
+
+    document.write("số nhỏ nhất trong dãy là " + nhanham())
+*/
+
+    /*  Bài 6
+    function timsonguyenduong() {
+        let input = parseInt(prompt("nhập một số bất kì"))
+        if (input > 0) {
+          return true
+        }else {
+            return false
+        }
+    }
+    console.log(timsonguyenduong())
+*/
+
+    /* Bài 7
+
+let soa = parseInt(prompt("nhập số nguyên a "))
+let sob = parseInt(prompt("nhập số nguyên b"))
+let mangab = [soa , sob]
+document.write("số a và b : " + mangab + "<br>")
+document.write("đổi chỗ a và b : " + mangab.reverse())
+*/
+
+    /* Bài 8
+    let mang = [4, 1, 6, 8, 2, 7, 0]
+    document.write("mảng số bao gồm = [ " + mang + " ] " + "<hr>")
+    let daomang = daonguoc(mang)
+    document.write("đổi chỗ mảng số = [ " + daomang + " ] ")
+
+    function daonguoc(mang) {
+        return mang.reverse()
+    }
+*/
+</script>
+
